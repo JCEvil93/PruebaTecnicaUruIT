@@ -1,4 +1,4 @@
-# PruebaTecnicaUruIT
+﻿# PruebaTecnicaUruIT
 Este repositorio es para la prueba técnica de UruIT
 
 Hola en este repositorio he cargado la prueba técnica propuesta para el proceso de selección.
@@ -11,7 +11,7 @@ brindada.
 El script de la base de datos es el que dejo a continuación:
 
 -----------------------------------------------------o------------------o-------------------------------------------
-createdata base dbPruebaTecnica
+create database dbPruebaTecnica
 
 create table tblPlayer(
 Player_ID int not null  primary key identity,

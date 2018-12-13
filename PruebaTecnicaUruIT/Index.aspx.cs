@@ -84,6 +84,7 @@ namespace PruebaTecnicaUruIT
             Session["winP2"] = 0;
             Session["currentPlayer"] = 1;
             Session["roundList"] = null;
+            lblMessage.Text = string.Empty;
             Rounds.Clear();
             gvRoundWinner.DataBind();
 
