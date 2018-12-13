@@ -11,7 +11,7 @@ brindada.
 El script de la base de datos es el que dejo a continuación:
 
 -----------------------------------------------------o------------------o-------------------------------------------
-create data base dbPruebaTecnica
+createdata base dbPruebaTecnica
 
 create table tblPlayer(
 Player_ID int not null  primary key identity,
