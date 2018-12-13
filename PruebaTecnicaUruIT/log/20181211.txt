@@ -1,0 +1,27 @@
+ASP.index_aspx 11:11:29
+btnStart_Click - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)
+
+ASP.index_aspx 11:12:38
+btnStart_Click - Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)
+
+ASP.index_aspx 20:58:47
+btnStart_Click - No se puede convertir un objeto de tipo 'System.Int32' al tipo 'System.String'.
+
+ASP.index_aspx 21:01:19
+btnStart_Click - No se puede convertir un objeto de tipo 'System.Int32' al tipo 'System.String'.
+
+ASP.index_aspx 21:01:49
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+
+ASP.index_aspx 21:05:22
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+
+ASP.index_aspx 21:07:59
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+
+ASP.index_aspx 21:15:05
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+
+ASP.index_aspx 21:22:16
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+

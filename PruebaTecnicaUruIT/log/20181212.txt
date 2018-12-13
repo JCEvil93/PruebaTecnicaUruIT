@@ -1,0 +1,27 @@
+ASP.index_aspx 16:06:38
+btnStart_Click - Referencia a objeto no establecida como instancia de un objeto.
+
+ASP.index_aspx 16:07:43
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:37:22
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:38:02
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:38:27
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:39:02
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:42:11
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:43:05
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
+ASP.index_aspx 16:46:38
+PrintWinner - ExecuteNonQuery requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+
