@@ -3,12 +3,12 @@ Este repositorio es para la prueba técnica de UruIT
 
 Hola en este repositorio he cargado la prueba técnica propuesta para el proceso de selección.
 
-Este se realizó en .Net como solicitaron, solo deben abrir el proyecto en visual studio. Antes de ejecturlo deben crear en 
+Este se realizó en .Net como solicitaron, solo deben abrir el proyecto en visual studio. Antes de ejecutarlo deben crear en 
 SQL server la base de datos que el proyecto requiere para funcionar y en caso de ser necesario,
 modificar el string de conexión en la clase index.cs según la configuración de su SQL Server. Agradezco de antemano la oportunidad
 brindada.
 
-El script de la base de datos es el que dejo a continuación, recominedo ejecutarlo linea por linea para evitar errores:
+El script de la base de datos es el que dejo a continuación, recominedo ejecutarlo query por query para evitar errores:
 
 -----------------------------------------------------o------------------o-------------------------------------------
 create database dbPruebaTecnica
