@@ -73,6 +73,7 @@ namespace PruebaTecnicaUruIT
             btnPlayAgain.Visible = false;
             txtPlayer1.Text = string.Empty;
             txtPlayer2.Text = string.Empty;
+            spWinner.InnerText = string.Empty;
             iconWinnerTrophy.Visible = false;
             Session["idP1"] = 0;
             Session["idP2"] = 0;
@@ -82,6 +83,12 @@ namespace PruebaTecnicaUruIT
             Session["winP1"] = 0;
             Session["winP2"] = 0;
             Session["currentPlayer"] = 1;
+            Session["roundList"] = null;
+            Rounds.Clear();
+            gvRoundWinner.DataBind();
+
+
+
         }
 
       
@@ -175,21 +182,18 @@ namespace PruebaTecnicaUruIT
 
         public void DetermineRoundWinner()
         {
-            //Creamos hashmap para guardar las rondas y el winner (1,"Juan")
-            //Map<Int, String> Rounds = new HashMap<Int, String>();
+            
 
-            //Comprobamos si la variable de sesion que guarda la lista está vacia
+            //check if the session  variable  that stores the round list if empty
             if (Session["roundList"] != null)
             {
-                //Si no está vacia, le guardamos la variable a la lista que acabamos de crear
+                //if is not we store the list in the Dictionary
                 Rounds = (Dictionary<String, String>)Session["roundList"];
             }
 
-            //Si la variable está vacia, no hacemos nada, porque igual la lista está vacia también
             
-            //TableCell cell1 = new TableCell();
-            //TableCell cell2 = new TableCell();
-            //cell1.Text = Session["round"].ToString();
+            
+          
             //1Piedra
             //2Papel
             //3Tijeras
@@ -197,21 +201,19 @@ namespace PruebaTecnicaUruIT
             if (((Session["moveP1"].Equals(1)) && (Session["moveP2"].Equals(3))) || ((Session["moveP1"].Equals(2)) && (Session["moveP2"].Equals(1))) || ((Session["moveP1"].Equals(3)) && (Session["moveP2"].Equals(2))))
             {
                 Session["winP1"] = (int)Session["winP1"] + 1;
-                //cell2.Text = txtPlayer1.Text.Trim();
-                //Añadimos la nueva ronda a la lista
+                //Add a new round to the list
                 Rounds.Add(Session["round"].ToString(), txtPlayer1.Text.Trim());
             }
 
             else if (((Session["moveP2"].Equals(1)) && (Session["moveP1"].Equals(3))) || ((Session["moveP2"].Equals(2)) && (Session["moveP1"].Equals(1))) || ((Session["moveP2"].Equals(3)) && (Session["moveP1"].Equals(2))))
             {
                 Session["winP2"] = (int)Session["winP2"] + 1;
-                //cell2.Text = txtPlayer2.Text.Trim();
+               
                 Rounds.Add(Session["round"].ToString(), txtPlayer2.Text.Trim());
             }
             else
             {
-                //Le asignamos la lista a la variable, para que persista en el tiempo
-                //cell2.Text = "Draw";
+                
                 Rounds.Add(Session["round"].ToString(), "Draw");
             }
 
@@ -220,9 +222,7 @@ namespace PruebaTecnicaUruIT
             gvRoundWinner.DataSource = Rounds;
             gvRoundWinner.DataBind();
 
-            //row.Cells.Add(cell1);
-            //row.Cells.Add(cell2);
-            //tblWinnerRounds.Rows.Add(row);
+           
 
             if ((int)Session["winP1"] >= 3 || (int)Session["winP2"] >= 3)
             {
@@ -313,13 +313,13 @@ namespace PruebaTecnicaUruIT
                     SqlCommand SqlCmd = new SqlCommand("SavePlayer", SqlCon);
                     SqlCmd.CommandType = CommandType.StoredProcedure;
                     SqlCmd.Parameters.AddWithValue("@NamePlayer", txtPlayer1.Text.Trim());
-                    //SqlCmd.ExecuteNonQuery();
+                    
                     Session["idP1"] = Convert.ToInt32(SqlCmd.ExecuteScalar());
 
                     SqlCmd = new SqlCommand("SavePlayer", SqlCon);
                     SqlCmd.CommandType = CommandType.StoredProcedure;
                     SqlCmd.Parameters.AddWithValue("@NamePlayer", txtPlayer2.Text.Trim());
-                    //SqlCmd.ExecuteNonQuery();
+                    
                     Session["idP2"] = Convert.ToInt32(SqlCmd.ExecuteScalar());
                     SqlCon.Close();
 

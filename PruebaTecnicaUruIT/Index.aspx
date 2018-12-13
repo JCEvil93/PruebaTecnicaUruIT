@@ -94,20 +94,6 @@
 
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script>
-       /* $(document).ready(function () {
-            $("#divRounds").hide();
-
-            if (($("#txtPlayer1").text().trim() == "" || $("#txtPlayer2").text().trim() == "")) {
-                return;
-            } else {
-                $("#btnStart").click(function () {
-                    $("#divStart").hide();
-                    $("#divRounds").show();
-                });
-            }
-        });*/
-
-    </script>
+   
 </body>
 </html>
