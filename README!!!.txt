@@ -14,11 +14,11 @@ El script de la base de datos es el que dejo a continuación:
 create data base dbPruebaTecnica
 
 create table tblPlayer(
-Player_ID int not null  primary key,
+Player_ID int not null  primary key identity,
 Gamer_Name varchar(50))
 
 create table tblGames(
-Game_ID int not null  primary key,
+Game_ID int not null  primary key identity,
 Winner int foreign key references tblPlayer(Player_ID))
 
 create proc SavePlayer
